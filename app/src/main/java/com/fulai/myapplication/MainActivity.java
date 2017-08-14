@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.CheckResult;
 import android.support.v7.app.AppCompatActivity;
+import android.util.SparseArray;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,6 +32,22 @@ public class MainActivity extends AppCompatActivity {
         System.out.println(memoryCacheSize);
         Toast.makeText(this, "修改之前", Toast.LENGTH_SHORT).show();
         txt.setText("首次运行");
+        sparseArrayUse();
+    }
+
+
+    public void sparseArrayUse() {
+        SparseArray<String> sparseArray = new SparseArray<>();
+        sparseArray.put(1, "value1");
+        sparseArray.put(2, "value2");
+        sparseArray.get(1);
+        int size = sparseArray.size();
+        for (int i = 0; i < size; i++) {
+            int i1 = sparseArray.keyAt(i);
+            String value = sparseArray.valueAt(i);
+            System.out.println(i1);
+            System.out.println(value);
+        }
     }
 
     @CheckResult
