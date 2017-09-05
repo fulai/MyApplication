@@ -15,7 +15,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Instrumentation test, which will execute on an Android device.
@@ -31,7 +31,6 @@ public class ExampleInstrumentedTest {
 
         assertEquals("com.fulai.myapplication", appContext.getPackageName());
     }
-
 
 
 }

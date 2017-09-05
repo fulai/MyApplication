@@ -1,4 +1,4 @@
-package com.fulai.myapplication;
+package com.fulai.retrofit;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -6,14 +6,6 @@ import android.support.test.runner.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import io.reactivex.Observable;
-import io.reactivex.ObservableEmitter;
-import io.reactivex.ObservableOnSubscribe;
-import io.reactivex.Observer;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
 
 import static org.junit.Assert.*;
 
@@ -29,9 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.fulai.myapplication", appContext.getPackageName());
+        assertEquals("com.fulai.retrofit.test", appContext.getPackageName());
     }
-
-
-
 }

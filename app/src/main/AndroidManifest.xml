@@ -10,10 +10,10 @@
     <!-- <! &#45;&#45; 外部存储读权限，调试工具加载本地补丁需要 &ndash;&gt; -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-
     <permission
         android:name="com.fulai.myapplication.permisson.REMOTE_SERVICE_PERMISSION"
         android:protectionLevel="normal" />
+
     <uses-permission android:name="com.fulai.myapplication.permisson.REMOTE_SERVICE_PERMISSION" />
 
     <application
@@ -60,6 +60,9 @@
             android:enabled="true"
             android:exported="true"
             android:process=":remote" />
+        <service android:name=".service.HeartBeatService" />
+
+        <activity android:name=".RetrofitActivity"></activity>
     </application>
 
 </manifest>

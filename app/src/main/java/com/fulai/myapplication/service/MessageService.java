@@ -111,4 +111,11 @@ public class MessageService extends Service {
             }
         }
     }
+
+    @Override
+    public void onDestroy() {
+        Intent intent = new Intent(this, HeartBeatService.class);
+        startService(intent);
+        super.onDestroy();
+    }
 }
